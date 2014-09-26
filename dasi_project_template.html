@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>Age and Attitude towards space exploration program</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+<!-- Styles for R syntax highlighter -->
+<style type="text/css">
+   pre .operator,
+   pre .paren {
+     color: rgb(104, 118, 135)
+   }
+
+   pre .literal {
+     color: rgb(88, 72, 246)
+   }
+
+   pre .number {
+     color: rgb(0, 0, 205);
+   }
+
+   pre .comment {
+     color: rgb(76, 136, 107);
+   }
+
+   pre .keyword {
+     color: rgb(0, 0, 255);
+   }
+
+   pre .identifier {
+     color: rgb(0, 0, 0);
+   }
+
+   pre .string {
+     color: rgb(3, 106, 7);
+   }
+</style>
+
+<!-- R syntax highlighter -->
+<script type="text/javascript">
+var hljs=new function(){function m(p){return p.replace(/&/gm,"&amp;").replace(/</gm,"&lt;")}function f(r,q,p){return RegExp(q,"m"+(r.cI?"i":"")+(p?"g":""))}function b(r){for(var p=0;p<r.childNodes.length;p++){var q=r.childNodes[p];if(q.nodeName=="CODE"){return q}if(!(q.nodeType==3&&q.nodeValue.match(/\s+/))){break}}}function h(t,s){var p="";for(var r=0;r<t.childNodes.length;r++){if(t.childNodes[r].nodeType==3){var q=t.childNodes[r].nodeValue;if(s){q=q.replace(/\n/g,"")}p+=q}else{if(t.childNodes[r].nodeName=="BR"){p+="\n"}else{p+=h(t.childNodes[r])}}}if(/MSIE [678]/.test(navigator.userAgent)){p=p.replace(/\r/g,"\n")}return p}function a(s){var r=s.className.split(/\s+/);r=r.concat(s.parentNode.className.split(/\s+/));for(var q=0;q<r.length;q++){var p=r[q].replace(/^language-/,"");if(e[p]){return p}}}function c(q){var p=[];(function(s,t){for(var r=0;r<s.childNodes.length;r++){if(s.childNodes[r].nodeType==3){t+=s.childNodes[r].nodeValue.length}else{if(s.childNodes[r].nodeName=="BR"){t+=1}else{if(s.childNodes[r].nodeType==1){p.push({event:"start",offset:t,node:s.childNodes[r]});t=arguments.callee(s.childNodes[r],t);p.push({event:"stop",offset:t,node:s.childNodes[r]})}}}}return t})(q,0);return p}function k(y,w,x){var q=0;var z="";var s=[];function u(){if(y.length&&w.length){if(y[0].offset!=w[0].offset){return(y[0].offset<w[0].offset)?y:w}else{return w[0].event=="start"?y:w}}else{return y.length?y:w}}function t(D){var A="<"+D.nodeName.toLowerCase();for(var B=0;B<D.attributes.length;B++){var C=D.attributes[B];A+=" "+C.nodeName.toLowerCase();if(C.value!==undefined&&C.value!==false&&C.value!==null){A+='="'+m(C.value)+'"'}}return A+">"}while(y.length||w.length){var v=u().splice(0,1)[0];z+=m(x.substr(q,v.offset-q));q=v.offset;if(v.event=="start"){z+=t(v.node);s.push(v.node)}else{if(v.event=="stop"){var p,r=s.length;do{r--;p=s[r];z+=("</"+p.nodeName.toLowerCase()+">")}while(p!=v.node);s.splice(r,1);while(r<s.length){z+=t(s[r]);r++}}}}return z+m(x.substr(q))}function j(){function q(x,y,v){if(x.compiled){return}var u;var s=[];if(x.k){x.lR=f(y,x.l||hljs.IR,true);for(var w in x.k){if(!x.k.hasOwnProperty(w)){continue}if(x.k[w] instanceof Object){u=x.k[w]}else{u=x.k;w="keyword"}for(var r in u){if(!u.hasOwnProperty(r)){continue}x.k[r]=[w,u[r]];s.push(r)}}}if(!v){if(x.bWK){x.b="\\b("+s.join("|")+")\\s"}x.bR=f(y,x.b?x.b:"\\B|\\b");if(!x.e&&!x.eW){x.e="\\B|\\b"}if(x.e){x.eR=f(y,x.e)}}if(x.i){x.iR=f(y,x.i)}if(x.r===undefined){x.r=1}if(!x.c){x.c=[]}x.compiled=true;for(var t=0;t<x.c.length;t++){if(x.c[t]=="self"){x.c[t]=x}q(x.c[t],y,false)}if(x.starts){q(x.starts,y,false)}}for(var p in e){if(!e.hasOwnProperty(p)){continue}q(e[p].dM,e[p],true)}}function d(B,C){if(!j.called){j();j.called=true}function q(r,M){for(var L=0;L<M.c.length;L++){if((M.c[L].bR.exec(r)||[null])[0]==r){return M.c[L]}}}function v(L,r){if(D[L].e&&D[L].eR.test(r)){return 1}if(D[L].eW){var M=v(L-1,r);return M?M+1:0}return 0}function w(r,L){return L.i&&L.iR.test(r)}function K(N,O){var M=[];for(var L=0;L<N.c.length;L++){M.push(N.c[L].b)}var r=D.length-1;do{if(D[r].e){M.push(D[r].e)}r--}while(D[r+1].eW);if(N.i){M.push(N.i)}return f(O,M.join("|"),true)}function p(M,L){var N=D[D.length-1];if(!N.t){N.t=K(N,E)}N.t.lastIndex=L;var r=N.t.exec(M);return r?[M.substr(L,r.index-L),r[0],false]:[M.substr(L),"",true]}function z(N,r){var L=E.cI?r[0].toLowerCase():r[0];var M=N.k[L];if(M&&M instanceof Array){return M}return false}function F(L,P){L=m(L);if(!P.k){return L}var r="";var O=0;P.lR.lastIndex=0;var M=P.lR.exec(L);while(M){r+=L.substr(O,M.index-O);var N=z(P,M);if(N){x+=N[1];r+='<span class="'+N[0]+'">'+M[0]+"</span>"}else{r+=M[0]}O=P.lR.lastIndex;M=P.lR.exec(L)}return r+L.substr(O,L.length-O)}function J(L,M){if(M.sL&&e[M.sL]){var r=d(M.sL,L);x+=r.keyword_count;return r.value}else{return F(L,M)}}function I(M,r){var L=M.cN?'<span class="'+M.cN+'">':"";if(M.rB){y+=L;M.buffer=""}else{if(M.eB){y+=m(r)+L;M.buffer=""}else{y+=L;M.buffer=r}}D.push(M);A+=M.r}function G(N,M,Q){var R=D[D.length-1];if(Q){y+=J(R.buffer+N,R);return false}var P=q(M,R);if(P){y+=J(R.buffer+N,R);I(P,M);return P.rB}var L=v(D.length-1,M);if(L){var O=R.cN?"</span>":"";if(R.rE){y+=J(R.buffer+N,R)+O}else{if(R.eE){y+=J(R.buffer+N,R)+O+m(M)}else{y+=J(R.buffer+N+M,R)+O}}while(L>1){O=D[D.length-2].cN?"</span>":"";y+=O;L--;D.length--}var r=D[D.length-1];D.length--;D[D.length-1].buffer="";if(r.starts){I(r.starts,"")}return R.rE}if(w(M,R)){throw"Illegal"}}var E=e[B];var D=[E.dM];var A=0;var x=0;var y="";try{var s,u=0;E.dM.buffer="";do{s=p(C,u);var t=G(s[0],s[1],s[2]);u+=s[0].length;if(!t){u+=s[1].length}}while(!s[2]);if(D.length>1){throw"Illegal"}return{r:A,keyword_count:x,value:y}}catch(H){if(H=="Illegal"){return{r:0,keyword_count:0,value:m(C)}}else{throw H}}}function g(t){var p={keyword_count:0,r:0,value:m(t)};var r=p;for(var q in e){if(!e.hasOwnProperty(q)){continue}var s=d(q,t);s.language=q;if(s.keyword_count+s.r>r.keyword_count+r.r){r=s}if(s.keyword_count+s.r>p.keyword_count+p.r){r=p;p=s}}if(r.language){p.second_best=r}return p}function i(r,q,p){if(q){r=r.replace(/^((<[^>]+>|\t)+)/gm,function(t,w,v,u){return w.replace(/\t/g,q)})}if(p){r=r.replace(/\n/g,"<br>")}return r}function n(t,w,r){var x=h(t,r);var v=a(t);var y,s;if(v){y=d(v,x)}else{return}var q=c(t);if(q.length){s=document.createElement("pre");s.innerHTML=y.value;y.value=k(q,c(s),x)}y.value=i(y.value,w,r);var u=t.className;if(!u.match("(\\s|^)(language-)?"+v+"(\\s|$)")){u=u?(u+" "+v):v}if(/MSIE [678]/.test(navigator.userAgent)&&t.tagName=="CODE"&&t.parentNode.tagName=="PRE"){s=t.parentNode;var p=document.createElement("div");p.innerHTML="<pre><code>"+y.value+"</code></pre>";t=p.firstChild.firstChild;p.firstChild.cN=s.cN;s.parentNode.replaceChild(p.firstChild,s)}else{t.innerHTML=y.value}t.className=u;t.result={language:v,kw:y.keyword_count,re:y.r};if(y.second_best){t.second_best={language:y.second_best.language,kw:y.second_best.keyword_count,re:y.second_best.r}}}function o(){if(o.called){return}o.called=true;var r=document.getElementsByTagName("pre");for(var p=0;p<r.length;p++){var q=b(r[p]);if(q){n(q,hljs.tabReplace)}}}function l(){if(window.addEventListener){window.addEventListener("DOMContentLoaded",o,false);window.addEventListener("load",o,false)}else{if(window.attachEvent){window.attachEvent("onload",o)}else{window.onload=o}}}var e={};this.LANGUAGES=e;this.highlight=d;this.highlightAuto=g;this.fixMarkup=i;this.highlightBlock=n;this.initHighlighting=o;this.initHighlightingOnLoad=l;this.IR="[a-zA-Z][a-zA-Z0-9_]*";this.UIR="[a-zA-Z_][a-zA-Z0-9_]*";this.NR="\\b\\d+(\\.\\d+)?";this.CNR="\\b(0[xX][a-fA-F0-9]+|(\\d+(\\.\\d*)?|\\.\\d+)([eE][-+]?\\d+)?)";this.BNR="\\b(0b[01]+)";this.RSR="!|!=|!==|%|%=|&|&&|&=|\\*|\\*=|\\+|\\+=|,|\\.|-|-=|/|/=|:|;|<|<<|<<=|<=|=|==|===|>|>=|>>|>>=|>>>|>>>=|\\?|\\[|\\{|\\(|\\^|\\^=|\\||\\|=|\\|\\||~";this.ER="(?![\\s\\S])";this.BE={b:"\\\\.",r:0};this.ASM={cN:"string",b:"'",e:"'",i:"\\n",c:[this.BE],r:0};this.QSM={cN:"string",b:'"',e:'"',i:"\\n",c:[this.BE],r:0};this.CLCM={cN:"comment",b:"//",e:"$"};this.CBLCLM={cN:"comment",b:"/\\*",e:"\\*/"};this.HCM={cN:"comment",b:"#",e:"$"};this.NM={cN:"number",b:this.NR,r:0};this.CNM={cN:"number",b:this.CNR,r:0};this.BNM={cN:"number",b:this.BNR,r:0};this.inherit=function(r,s){var p={};for(var q in r){p[q]=r[q]}if(s){for(var q in s){p[q]=s[q]}}return p}}();hljs.LANGUAGES.cpp=function(){var a={keyword:{"false":1,"int":1,"float":1,"while":1,"private":1,"char":1,"catch":1,"export":1,virtual:1,operator:2,sizeof:2,dynamic_cast:2,typedef:2,const_cast:2,"const":1,struct:1,"for":1,static_cast:2,union:1,namespace:1,unsigned:1,"long":1,"throw":1,"volatile":2,"static":1,"protected":1,bool:1,template:1,mutable:1,"if":1,"public":1,friend:2,"do":1,"return":1,"goto":1,auto:1,"void":2,"enum":1,"else":1,"break":1,"new":1,extern:1,using:1,"true":1,"class":1,asm:1,"case":1,typeid:1,"short":1,reinterpret_cast:2,"default":1,"double":1,register:1,explicit:1,signed:1,typename:1,"try":1,"this":1,"switch":1,"continue":1,wchar_t:1,inline:1,"delete":1,alignof:1,char16_t:1,char32_t:1,constexpr:1,decltype:1,noexcept:1,nullptr:1,static_assert:1,thread_local:1,restrict:1,_Bool:1,complex:1},built_in:{std:1,string:1,cin:1,cout:1,cerr:1,clog:1,stringstream:1,istringstream:1,ostringstream:1,auto_ptr:1,deque:1,list:1,queue:1,stack:1,vector:1,map:1,set:1,bitset:1,multiset:1,multimap:1,unordered_set:1,unordered_map:1,unordered_multiset:1,unordered_multimap:1,array:1,shared_ptr:1}};return{dM:{k:a,i:"</",c:[hljs.CLCM,hljs.CBLCLM,hljs.QSM,{cN:"string",b:"'\\\\?.",e:"'",i:"."},{cN:"number",b:"\\b(\\d+(\\.\\d*)?|\\.\\d+)(u|U|l|L|ul|UL|f|F)"},hljs.CNM,{cN:"preprocessor",b:"#",e:"$"},{cN:"stl_container",b:"\\b(deque|list|queue|stack|vector|map|set|bitset|multiset|multimap|unordered_map|unordered_set|unordered_multiset|unordered_multimap|array)\\s*<",e:">",k:a,r:10,c:["self"]}]}}}();hljs.LANGUAGES.r={dM:{c:[hljs.HCM,{cN:"number",b:"\\b0[xX][0-9a-fA-F]+[Li]?\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\b\\d+(?:[eE][+\\-]?\\d*)?L\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\b\\d+\\.(?!\\d)(?:i\\b)?",e:hljs.IMMEDIATE_RE,r:1},{cN:"number",b:"\\b\\d+(?:\\.\\d*)?(?:[eE][+\\-]?\\d*)?i?\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"number",b:"\\.\\d+(?:[eE][+\\-]?\\d*)?i?\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"keyword",b:"(?:tryCatch|library|setGeneric|setGroupGeneric)\\b",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\.\\.\\.",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\.\\.\\d+(?![\\w.])",e:hljs.IMMEDIATE_RE,r:10},{cN:"keyword",b:"\\b(?:function)",e:hljs.IMMEDIATE_RE,r:2},{cN:"keyword",b:"(?:if|in|break|next|repeat|else|for|return|switch|while|try|stop|warning|require|attach|detach|source|setMethod|setClass)\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"literal",b:"(?:NA|NA_integer_|NA_real_|NA_character_|NA_complex_)\\b",e:hljs.IMMEDIATE_RE,r:10},{cN:"literal",b:"(?:NULL|TRUE|FALSE|T|F|Inf|NaN)\\b",e:hljs.IMMEDIATE_RE,r:1},{cN:"identifier",b:"[a-zA-Z.][a-zA-Z0-9._]*\\b",e:hljs.IMMEDIATE_RE,r:0},{cN:"operator",b:"<\\-(?!\\s*\\d)",e:hljs.IMMEDIATE_RE,r:2},{cN:"operator",b:"\\->|<\\-",e:hljs.IMMEDIATE_RE,r:1},{cN:"operator",b:"%%|~",e:hljs.IMMEDIATE_RE},{cN:"operator",b:">=|<=|==|!=|\\|\\||&&|=|\\+|\\-|\\*|/|\\^|>|<|!|&|\\||\\$|:",e:hljs.IMMEDIATE_RE,r:0},{cN:"operator",b:"%",e:"%",i:"\\n",r:1},{cN:"identifier",b:"`",e:"`",r:0},{cN:"string",b:'"',e:'"',c:[hljs.BE],r:0},{cN:"string",b:"'",e:"'",c:[hljs.BE],r:0},{cN:"paren",b:"[[({\\])}]",e:hljs.IMMEDIATE_RE,r:0}]}};
+hljs.initHighlightingOnLoad();
+</script>
+
+
+
+
+</head>
+
+<body>
+<!-- Make sure that the knitr package is installed and loaded. -->
+
+<!-- For more info on the package options see http://yihui.name/knitr/options -->
+
+<!-- Replace below with the title of your project -->
+
+<h3>Age and Attitude towards space exploration program</h3>
+
+<!-- Enter the code required to load your data in the space below. The data will be loaded but the line of code won't show up in your write up (echo=FALSE) in order to save space-->
+
+<h3>Introduction:</h3>
+
+<!-- What is your research question? Why do you care? Why should others care? -->
+
+<p>What I will investigate in this report is the associate between age and people&#39;s attitude towards the money we are spending on the Space exploration program.<br/>
+Reasons why I am interested in this question, and why others should care are discussed below. </p>
+
+<ul>
+<li>First, to a certain extent, I am a fan of manga about space, like &ldquo;Space brothers&rdquo;. Besides, I believe that we should spend more budget on space exploration because the development of technology during space exploration will benefit human eventually. So I think others should care, too.<br/></li>
+<li>Second, People&#39;s attitude towards the money spending on the Space exploration program, somewhat indicates if people are positive or negative about it. I am interested to find what factors will influence the attitude. Other factors may also affect, like education, satisfaction of current life. But from my personal experience, some people I know, including myself, become conservative as age grows. So maybe it will be interesting if I find the association between age and attitude.</li>
+<li>Third, I care about what the growth of age will bring us. I think others should also care about it, too. Because If we know age growth will make us conservative which we may not want to be, then we may have to pay attention to keep our minds open and accept different things. Space exploration is just one aspect, but I think it somewhat indicates our minds.</li>
+</ul>
+
+<h3>Data:</h3>
+
+<!-- Data Collection, Cases, Variables, Study, Scope of inference-generalizability. -->
+
+<p>The Data I use is General Social Survey collect data on demographic characteristics and attitudes of residents of the United States, called &ldquo;GSS&rdquo;. According to <a href="http://publicdata.norc.org:41000/gssbeta/faqs.html#10">GSS Offical Site</a>, the way of data collection was listed below.</p>
+
+<ol>
+<li>Since 1975 the GSS has used full-probability sampling of households designed to give each household an equal probability of being included in the GSS. Only one adult per household is interviewed.</li>
+<li>Majority of GSS data is obtained in face-to-face interviews. Computer-assisted personal interviewing (CAPI) began in the 2002.</li>
+<li>From 1972 until 1993, the GSS was administered almost annually. The target sample size for the annual surveys was 1500; actual sample sizes ranged between 1372 (1990) and 1613 (1972). Additionally, there were oversamples of black respondents in 1982 (oversample of 354) and 1987 (oversample of 353). There were no GSSs in 1979, 1981, or 1992.</li>
+<li>Not all questions asked of all respondents.</li>
+<li>Response rates is not 100%.</li>
+</ol>
+
+<p>Each case I will focus on is <strong>independently drawn sample of an adult(+18) in this study</strong>.<br/>
+As I dicussed in the introduction, I will choose two variables, <strong>age</strong> and <strong>natspac</strong>.  </p>
+
+<ul>
+<li>age: Age of respondent. Only age is numerical, but I will divide it into different age groups as below to do this study.<br/>
+[categorical: (18 - 29), (30 - 44), (45 - 59), (60 - 74), (75+)]</li>
+<li>natspac: attitude towards the money we are spending on SPACE EXPLORATION PROGRAM.<br/>
+[categorical: too much money, about right, too little ]</li>
+</ul>
+
+<p>The type of the study is an <strong>observational study</strong>. According to the <a href="https://d396qusza40orc.cloudfront.net/statistics%2Fproject%2Fgss1.html#natspac">codebook of GSS</a>, quote&quot;The GSS aims to gather data on &hellip; in order to &hellip;&ldquo;, and the way of data collection, I think GSS study is an observational study because, different kinds of data are just gathered, and there is not an experimental design including random assignment to groups.<br/>
+The population of interested is <strong>residents of the United States of America(age:+18)</strong>. Since the study was conducted by nearly randomly choosing samples from American population, the results <strong>should be generalizable</strong>. <strong>As there is no random assignment, I can not make any established causal links</strong>.<br/>
+Although I think the study can be generalized, there are also some bias and other factor we may have to pay attention to.</p>
+
+<ol>
+<li>Response rates is not 100%(always 70% ~ 80%), so <strong>non-response bias</strong> might be considered. As simple random sampling is used in the study, and non-response rate is relatively low, I consider the sample will represent the population of interest.</li>
+<li>This is a household based study. It may be not &rdquo;<em>exactly</em>&ldquo; simple random sampled because persons living in large households have <strong>slightly</strong> lower probabilities of selection. But since it is so slight based on huge population, I believe it is &rdquo;<em>nearly</em>&ldquo; simple random sampled, so generalizability of the data should be ensured. </li>
+</ol>
+
+<h3>Exploratory data analysis:</h3>
+
+<!-- Calculate and discuss relevant descriptive statistics, including summary statistics and visualizations of the data. Also address what the exploratory data analysis suggests about your research question. -->
+
+<ul>
+<li>First I will pick up the data of the year 2012(ignore NA) and divide age into different groups. One reason I pick the year 2012 is that it is the newest year, I assume it can represent the recent view as the society changes. The other reason is that the whole years of dataset may create respondents to overlap. As you can see the R code below, pro2012_group will be the data set I use in this study.</li>
+</ul>
+
+<pre><code class="r">project = subset(gss, gss$year == &quot;2012&quot;)
+pro2012 = na.omit(subset(project, select = c(&quot;age&quot;, &quot;natspac&quot;)))
+pro2012$age_group = c(&quot;18-29&quot;, &quot;30-44&quot;, &quot;45-59&quot;, &quot;60-74&quot;, &quot;75-&quot;)[findInterval(pro2012$age, 
+    c(-Inf, 29.5, 44.5, 59.5, 74.5, Inf))]
+pro2012_group = subset(pro2012, select = c(&quot;natspac&quot;, &quot;age_group&quot;))
+</code></pre>
+
+<ul>
+<li>Second I will create the mosaicplot of data to show the relationship of these two variables. X represents age group, Y represents natspac(attitudes towards Space exploration grogram). </li>
+</ul>
+
+<pre><code class="r">mosaicplot(table(pro2012$age_group, pro2012$natspa), col = c(&quot;red&quot;, &quot;green&quot;, 
+    &quot;blue&quot;))
+</code></pre>
+
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfgAAAEgCAYAAABYRWE9AAAEJGlDQ1BJQ0MgUHJvZmlsZQAAOBGFVd9v21QUPolvUqQWPyBYR4eKxa9VU1u5GxqtxgZJk6XtShal6dgqJOQ6N4mpGwfb6baqT3uBNwb8AUDZAw9IPCENBmJ72fbAtElThyqqSUh76MQPISbtBVXhu3ZiJ1PEXPX6yznfOec7517bRD1fabWaGVWIlquunc8klZOnFpSeTYrSs9RLA9Sr6U4tkcvNEi7BFffO6+EdigjL7ZHu/k72I796i9zRiSJPwG4VHX0Z+AxRzNRrtksUvwf7+Gm3BtzzHPDTNgQCqwKXfZwSeNHHJz1OIT8JjtAq6xWtCLwGPLzYZi+3YV8DGMiT4VVuG7oiZpGzrZJhcs/hL49xtzH/Dy6bdfTsXYNY+5yluWO4D4neK/ZUvok/17X0HPBLsF+vuUlhfwX4j/rSfAJ4H1H0qZJ9dN7nR19frRTeBt4Fe9FwpwtN+2p1MXscGLHR9SXrmMgjONd1ZxKzpBeA71b4tNhj6JGoyFNp4GHgwUp9qplfmnFW5oTdy7NamcwCI49kv6fN5IAHgD+0rbyoBc3SOjczohbyS1drbq6pQdqumllRC/0ymTtej8gpbbuVwpQfyw66dqEZyxZKxtHpJn+tZnpnEdrYBbueF9qQn93S7HQGGHnYP7w6L+YGHNtd1FJitqPAR+hERCNOFi1i1alKO6RQnjKUxL1GNjwlMsiEhcPLYTEiT9ISbN15OY/jx4SMshe9LaJRpTvHr3C/ybFYP1PZAfwfYrPsMBtnE6SwN9ib7AhLwTrBDgUKcm06FSrTfSj187xPdVQWOk5Q8vxAfSiIUc7Z7xr6zY/+hpqwSyv0I0/QMTRb7RMgBxNodTfSPqdraz/sDjzKBrv4zu2+a2t0/HHzjd2Lbcc2sG7GtsL42K+xLfxtUgI7YHqKlqHK8HbCCXgjHT1cAdMlDetv4FnQ2lLasaOl6vmB0CMmwT/IPszSueHQqv6i/qluqF+oF9TfO2qEGTumJH0qfSv9KH0nfS/9TIp0Wboi/SRdlb6RLgU5u++9nyXYe69fYRPdil1o1WufNSdTTsp75BfllPy8/LI8G7AUuV8ek6fkvfDsCfbNDP0dvRh0CrNqTbV7LfEEGDQPJQadBtfGVMWEq3QWWdufk6ZSNsjG2PQjp3ZcnOWWing6noonSInvi0/Ex+IzAreevPhe+CawpgP1/pMTMDo64G0sTCXIM+KdOnFWRfQKdJvQzV1+Bt8OokmrdtY2yhVX2a+qrykJfMq4Ml3VR4cVzTQVz+UoNne4vcKLoyS+gyKO6EHe+75Fdt0Mbe5bRIf/wjvrVmhbqBN97RD1vxrahvBOfOYzoosH9bq94uejSOQGkVM6sN/7HelL4t10t9F4gPdVzydEOx83Gv+uNxo7XyL/FtFl8z9ZAHF4bBsrEwAAKhVJREFUeAHt3Qm8W2Wd//FzbxfK0lLa0kILlEVAFmVAEBi2UmRflBEQWQpFERhcKIjAwAgy+ldAQVEWASkDyFJkGQbBwbIvIwWlwrAv3WyhlKXQlm53+X+/vefRkCa5uU1yb06ez+/1+t6zJDk55/2cnCcnyU2ShEIAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAIEGE+jVYNvD5iBQLwKDtSIrKYvqZYVYj8wJsA9lrsnqa4Xp4OurPWqxNs1aaHuZC95B19tGeU/5uMhtDtD8TyuvFLm80OxBmnmqMk35sNAVajBvay3zs8pHSv629Ne8nZV1lDlKi5JffTXjUGV1ZUb+hZoutXzf5kZllDJRWaJQ2RMo1caNsA915dhQaevZ63Tlb8rcShfG7RGIXcCdzMXKyV2AuE/X9ZOB0SVuszC9jg8O5dYFuqIf1P3KvUEF1xuj205XvB3OfOVoJdQ/aWSmEi5/VeMbhgtzhr9MrzMhZ55HO1v+WF3HT2LC8j2+r0JlR6CzNs76PtSkpjhKua2bm+RF3d/N3Xyf3B0CDSlwobbKncwpXdi6WnTww3X/PoO+ugvrsaJXXUs39NnyYuUM5RylTfGTkiGK6wHFLj9SrkzHfbYdajWN/FgJHXRuB9/Z8v2kx69S+EmDD573Kq3Kc4oPqlT9C3TWxt6CrO9D22obvH8/6Y3pxjpT9+XHw5bdeJ9R31XvqLe+cTd+O23a9unm7aHh+8r16bQv21XxWevryj3Ka0pu9dHESYofiM8q4xU/MIvV/rrgC4o7cj9JeFwJ9R2NrKyE+99c4wcqjynuEL+o+GX03yizFNdnlP2Uh5TPKespfoLwpuKX+vZWdlJ8duxOdJLi2kiZrLyg+FUDl5fvA5rfVvibMlqZopyt+D3yI5TDlBOV+cojyjaKl7GFkludLd/r73W9TpmreHqc8p7iA6prFWWUsoti55eUmxQ/CQl1sEZ2V6Yr1yhfV7xufkLisufXFFt6W36rBDuNllWl7mNF/f0k5ntKi/KzdC2GajhW8frdoLjNT1fmKP+jHKUMU+5UHlPKKW/3gYqv7+UV2ocO1fwNFT/ROkF5S7lMWap4vvch799+DNyoeH1cGyn1vg/Zz/v+75RjlQ0UW0xQQq2jkdHK55V3lD8p9yv9lWMV1wjlDOUKZYFyuLKdYiNf348/Hztc/6JsrIxX9lP8uPxrOp17bPDtix1fvJ/+P+Vc5VCFQgCBFRA4Vbdpz8mkdBk+EHq+D8Dz0nF3RD6oue5TfPlMxWfBben0vRqGWqgRX8cHVpcP5J72QcHxbcYpoR7SyMeKD/6uIxVf/xnFBwavi6dnK+4cXccpnuf3+T10/H76QOXP6XSY72WcpRQqd4R+8uDr+sxs93TcHUsoH6R8uZ8AuNzR+HoHKZ6fe9DU5Ccqf/m+0B2G7V5Szlbyy52Jl2v/sO0P5lzpgvRyX8fWzyu+3hTF5QP0C4ovt6uH7yr2Kbc6u48V9fc+EdY7rMvW6Tx3GK4+iq/jDn+GEgzcjsco5VQ5+1DYl8M+5KFrV2WB4nUIcefujrBQ5bdxPexDfpXKnbZfKQr7t7flNMW1hvK24nkfpEOPn6SsmzMdtn+k5p2fzvcToWnpuI8bvRXXXYqv73luq3DbuzUeqrPji6/nffe9cAOGCCDQdYHVdJMrFD8Iz1PWVFxnKH4W747UB+M7FF9nrOIKB8UnND5M2UKZrfg6PuNxLVQ87dtvpbQp0xUfONZRfIDw2eYQxeUHczi4ejocnH2Q2F/x9cLB4xqNu45TfB9LFXe0Byiu0DnepnFvgw8oHype1jZKbvXSxK2Kl+PbuY5QPH2nJ9Jyx+N5PnDnVmcdfKHl+/ZfUoKZbR5SQufrA+91ylWKb+9pW/n+3WYjFW+zO72dlQHKTYovn6q4/kPx9PVKP8VnXZ7+b6WcKuc+VtS/WSvgdfE+EmprjXhefgfveb9UVle+qXjaHW1fpbMqZx8K+/JftLAdlB0Ve3l/8X2drHgf/0k6/bKGXv/cKtTGPb0Pef2WKN6Gs5Qm5V/T6Uc0dHlf9mNqjCdUwctP1L1Nftz59s8oIxR34u8r3m8HKq7TlR8ovtwVHqOTNf4pxY83P9a9nHBsOEPj9yt+bNryDsWXj1VC/UEjnrd2mMEQAQS6LnChbuIH0il5N3Vnf5RyheKzKF/HB1hXOCie1DG57G/oYP4tnbdQQ9/GD+BwYH5U48ek8ZMDX76f4oODxycqocLBJhzwPX8fxdfz2arrOMXTPhiEatLIO4rnbxlmahjW75yceT5gTVB83f9TBiuuryie54NVqKc04nm7hBnp8KB0vpeTX8WWH67nTsvbvFjxsmcqXv9QXv9xyu1KuM5QjfsJi6+fa7NbOm+qhq5HFF/nZ8oxig+eixQ/USinyrmPFfX3PuF18z4SqlQH747A5U7nA8W3/bTSWZWzD4V9+Ws5C9td476PF3PmraTxeen8TXLmF2vjetiHQgc/LF1f70/err/mrH9fje+p/FCZpPhy7zuu7RRPP+mJtPxEyPO87MeUs5WRSqjQwZ8WZmj4G8W3+X7OvFLHF1/tasW38bpRNRbwA5KKR+BMberbymWKO72XFVdbx+Dvf30mFWpaOrJamJEzDPM207wz0qyh4UtKPyUcgHzwzq9C97F63pV8hhDKB6yBis/Wp4SZGr6ejodO3Afmm5VDlReU0Up4SdDb7grr7fH+/qOa1THo9G+p5fvG7qwWKs8r5ylel+HKjorv90HFl/kM0tv3oeLyQc+3dc3tGCz7G9Y9zArr/iXNsPnpypvKdGVVpbMq5z7CMlbE37cN9+Fxt1uhatFMnzW63KZ+EuTK3wc65hb+29V9yE+iXGGf8bifYIX79qtJrlJt3NP7UMcadvx9N51wp+wKx/PtNO5t8hPkXZXJiiv/cd4xt+PvFzUYryxQdlZ+qLyifFrJLT/JDuV9zjWgY5CUc3wJbd6Vdk4Xz6CrAmGH6OrtuH79C4QHsw9WLncM5yvzlHWVwxR3xIXKD/BQu6QjuZ1quGxiOvK0hpun8dn/V5X/Vl5V3HGtqeTXbpoR1i3cxxt5V/LBN5THfaBy57FXmKnhfum4O03XRcohygvKKCX3gOQDu122VNzx+MC0geKz33CQ12jJKrX8fXVLr+fP0yW0aOj1cPnA5k7ZZ5G3KZ9SvqXYx+XhQ4rXzx6rKq6DOwZ//xvMfQC2uV8qPV2xwwKlsyrnPsIyuurvdfeTmz7KyulCRqbD/IHbfrd05mANvS2uNzsGZf317buyDz2VLtVt4CegLrf/pkqrEs7sS7VxT+9DWs1l1a6/XudC9e+a6Scrhyu7KjcpuRVuF56IeV/z/niX4rb4vHKnspJynJJbX8iZ2Dkdd5uVe3wJT6hfy1kOowgg0EUBv8Tmg8D/Kj7T80HXZ2Q+CJ+gfFNxh+Dr+Jm36z7F077OBOXmdPwDDQcpLh/AfR0/OWxSfEazVHGndlo67gd8eIY+VeOvKKGO1Ihv7zyjXKD4LNXTRykuH1Q8fYUncup4jXv+POVy5cl02sv3AdsHa1/ueFvduYaEg9Hd6eW3a3h/Oh46ZE3+vQ7SmJdjh1CdLd8HzDcU+01RnlB8hu7tdI1WvEyvrzvu36TTnreh4npY8bRdPe5O1tNTFdduiqenK+MUt5Gnr1TKrYd1Rd+m2H2sqL/v/8/psn+r4SnKjHT6Txq6vB/6vp05yk+UZ9Pp/9LQ9RXF232NJwpUOftQ2Jdtnluhzf3k82JlluJ1+ani6qyNfZ2e3Id8/0sU72OhNtGIt+H5dIYfN56+UTlU+Us67bZxbaz48rnKhYr3PXt4mecovs2Diq/zr4rrLsXTLcoNyk2Knyh4/15Tcbv6MedlnKAUOr5o9rJXFXyd8ATW8ygEEOiiwBa6fug430xvO0bDaYofqO4g/iMdd2fnCgfFsRqfrfh6ftDuoYRaqBHPb05nfFZDH1jCg/9JjfsMIJQP2n5AD05nhIPzPZp+WPHt/AThx0qT4jpO8XwfqPLreM3w9vhyH2D+RxmpuPxExfMLZR9fQbW28qgSruNtDk9eNPr3KtTBl7P87bWEPypevg/EVysjlVDjNeJXDHy51932Hj9ccflgaTM/qZqkHKj48peUUCdq5H3F832AvVVZWSm3OruPFfX3/e+kuOP2ur2tfCUd/5OGrtDBL9C49z93GL7uw8paiuuriufZrlAdqZm+vNQ+5Hb1dUYrudVPE9cp7tx8+cfKj5S+iqucNu7pfaizDn4Tbcfjih93i5TzlXcUb2t/xY+z8Biwv/fZzyl/UMK+uVjjP1eaFVfo4C/SeDg2uH339IVpdXZ88dV8m8np9RkggEAFAj5oraeEB6kX5Qf3cI90Ur7eOkrodDu5+rL3xwcWuNJemucD6ZfTy8LB+dp02gf1rnRO6c2WdQaVnAUM0YLWCAurwfAKLfOsIstdRfMLPanwqx7fUvzkwtdxfUax30RP5NUITffOm9fZZFfvo9jy3G7F/L3PeN0KVejg56UXehlDC1zxAs07t8B8z6rGPuTHxLpKLy9wBasn96FyVtmu4YlLoev78Z3/2HP7rK94mFuhg99XM4NdoWOD5xU7vvhkwPvy0QrVDQJdPTh0wypxF1UU8DP96XnL8wNsVt68QpO+3t8KXVBk3twi8+/XfJ+J+kzu9gLX8TP6FakVvV24r3fDSI2Gt2i5PhsqVD6TcvLLZ+NHKZ9XHlD80rUPqC5P59fMvBkDNH1s3rz8yas0oyv3kX/7MF3K3/tO/rqF2+UPfSbv5NY+mjhE2Sl3ZonxUutS7GY+u51R7MIy5/fkPlTOKvqsvVQVenwv1Q2mlrqRLitlV+r4crhuO025uZPlczECCGRI4ECtqw8cfmZ/gPKS8iOFWl7AL5U+onyktCg+IPpsdiWls/IZ2cudxK9aVHIfna1DZ5f7pMLt/0yJK/bXZcVeHfDN2IdK4NXool9puW63XVZw+f10uznKt1fw9twMAQTqWMAdVO5bBXW8qnWzat3h1R33UTegrEiPCfilex8DPKQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBOIT6BXfJmdqizfQ2n5Jmaz0Vk5RDlKmKh8ooVbWyDjF131beUcZpZyq9FVeUajCAp/V7DOVzZWnlCbldOVI5UVlrpJfR2tGqzInvWC4hscpvj1VPQHvu+cpDyn9lF8qByhbK48qoQpdNkoXsv8HoSQZrNFvKnsokxTvv8X282N02UmKrZ37FV+/nvdz92VXKGGdh2r8JaXYPqOLKAR6TmAX3bUPYj9LV8Gdtx90fqDenM4LA88/WFlVuVtZLR36wPcrZQuFKixwpWbb6TxlT+Vo5WvKOsrtSn7Z8nVl9/QCPyEYr9ySTjOonsB5WlR40rStxn+gDFJWV3Ir/zL2/1ydjvFbNXCnt7fS2X7u44idfQy6QXFlYT/3OjuXK34ik79faFZc1RzX5mZqa9/W2p6otKdr/ZqGOysnK5PTeWHgZ653Kj7j6a+MUN5QFimvKt7RqcICNv4nxWeFfqVje+Ve5W9KHyW37HuaclXOzG9p3J17aKecixitQGA33XaOMjtdhttoU+UnymbpvDDIv4z9P8h0DL0fD1C+q/gJ6uNKqf18gS5/X/ErW99WXFnYz73OIxU/Fh9Q8vcLzYqrese1uZnaWnfoG+es8ac17gPeVGWUspHiZ6me5859iHKj4gekO6p+ynhlDeX3ClVcYKEuektxJz9A8RMjV5uS6+zLf6b4DMi1peJXVB5TjlWo6gj4DN2vpByv+IzT9bTig7b397uUE5Sw/+df5vZh/xdCWn7S7yf5xyn7KkcppfZzH092UF5UPlCytJ9/U+t7geLK3y9y9xlvY8MXZ/DZaeJRWlV3LtcrfqnNndAsxQe8YYo7cz/Lfl5ZSblW8QFyosJ78EIoUH7Z0UZ/Va5RfFCbqqyvhHLnH5z9ZOlMxQfIsxQ/6dpQ8W13VL6gUJUL2NT7sPd1P6lyG/n938XK/HS4RMPQLvmXrazL2P+FkJY76cnKW8ozivfbqcr6Sqjc/dzzjlB8THFtomRhP++l9fSrN68qrvz9YonmhX1m2RX4g0BPCmysO/9pugKf0fAqxZ38uHReGPhg9r/Kbcqt6cxfa+hnsj9PpxkUFnBHfbHizsQHsfXScU8foRSqUzRz95wLVtH4zTnTjFZP4O50UVtpeJNykTI2nRcGhS5j/w86HcNjNPixco/iDr6z/dxvUzUruVXv+7mfiPwiZ4UL7Rc5FzOKQP0J9O3CKq3UhevGfNVCpoXmxWxUL9vep8SK5F/G/v9JLPs0fXLWss/t5M1quMn8/aLhNpANQgABBBBAAIGIBPKfzUW06ZVv6rpJco5O89apfEmZXUKz3hC9dHaS/F+hLVg/Sb6qN8X8UnZbocuZ170CaoReU5LkDN3r+4XuWfvzOO3Pmxa6jHmVC6T+/t/zuYWWhn/SpDfJb5zR8aHV5Yjks7eOJ4cpS5e7sEozOmujKt1Nty2GT9EnyU7S3kjRsW/Z+9gt5eoPS5qOvzDpvV6512+0683Rf6N8N2nxB1f8ydXlSq+LffdXSZ9teH1sOZoemfGc2uu0pOWp1o4PBS63DjoYjLs66aPjKFULgb/Kf1zS8qSWHT689om70eMkav8F8vl20jJcKI99Aiad0AcAvnNx0mdff4KyVjVZ5yKnJq1PaPnX1eo+unO5sXfwewp7R8WfvPQnTU9VLlTKKv0fTusuy30OpaybNsSVHtCDQTvQ4mIbo2farVvqLb+hy73tV+wWzK+lwLRlX0ZW/B7UwbTEvD8Xl6nOJVPxLwn5rI4negXp42JX0if+2vzsc7MaHnOn6ElGI1X+pyQbadvK2ZZtdaWrFHdSDyr+n2YKAQQQQACBzAvE3sHfoBa8XNlVuUW5WaEQQAABBBDIvECsL9Hr1eNlX2PoBvyRspbytuKX6SkEEEAAAQQyLxBrB6+3G5P9C7TenzVvWoH5zEIAAQQQQCBTArF28P6a1/OVvRS/9+5PzvtfBscoFAIIIIAAApkXiLWDd8P9QDlceVVpU/x5hLsUCgEEEEAAgcwLxNzBn6vWm6X4f1L9v9ycwQuBQgABBBBoDIGYO/hwBn+AmpIz+MbYn9kKBBBAAIFUIOYO3mfwtysvKPpyLwoBBBBAAIHGEYi1g19NTfg95WXlhznN+QeN+//iKQQQQAABBDItEGsHr99ISb6fttxN6dAfshuYjjNAAAEEEKgjAX2H7dyjk5bZw5JkYa1W69mkfU0te0qtlt/dy421gy/kvLpm/lg5odCFzEMAAQQQ6DmBaUny9WlJ+9BuWIPp3XAf3XIXdPDdwsydIIAAAghUKODvL2mYzrdCi7JuHmsH72+y+2KekN+XpxBAAAEE6lCgeYPk7Oa25IimlWv3En370qRvyxvJl7X5r9UhQZdXKdYO3u+3662c5Yofm1mOhBkIIIBAzwv07pfsOPSW3pv3HuGvLKlNLbizLZlzfOtOWjodfG2Iu2Wp/nnYy7rlnrgTBBBAAIHKBXRa1tSnKek1uHYdfOLXdhuofCZLIYAAAggggECDCcT6En1oRj8VHK3so/h/4q9V2hUKAQQQQACBTAvEfga/p1pvD+V6ZQ1lnEIhgAACCCCQeYHYO/gd1IJ+L/55xd9gN0KhEEAAAQQQyLxA7C/R36oWvESZoXxKOV+hEEAAAQQQyLxA7B38K2rBw5StFJ/F+1flKAQQQAABBDIvEHsH7/+FD/8uN1zj/ppad/QUAggggAACmRaI/T34MWq97ymHKPsrxysUAggggAACmReIvYOfpRbcS+mvjFb8kj2FAAIIIIBA5gVi7eB7qeX8ifkJylzlSmUtZbxCIYAAAgggkHmBWN+DH6CW8+/B+z33W9JoQCGAAAIIINAYArF28G69kcqBec2onxxOnsubxyQCUQi0JknzHL7IsWZtvbRmS2bBCBQWiLmDX10kG+exLMybZhKBaAS08z8/OlkyJ5oN7uYNfTdJhuouH+/mu+XuIhaIuYP3mfrFlbS9/mm+aW7EZzwtwrNBJYbctn4E9InTA/2pUwoBBBpDINYOfr6a74pKm3BK0j5z52TJh5UuJ6u314YP1KcVnyy2/h8lydIxydJZqyWJnwtQPSzwdNI+WC/D+1sbi9VAXeBQtROYWrtFs2QEPikQawfvt8Mmf5Ki61NvJcnOClVEQGeD+85K2tcucjGze0ag6L+CNg9Knl1pe16QqVWztH+U9Fn0RPtRWv7DtboPlotArkCsHXyuQSXjPttZtZIFNMBt39Y26MSwYOkkPnGoDAj0GpK0D7+3zwYZWNVMruK861uTRU+02vfhTG4AK505ATr4CpqseUjyfN+tmqL9cGz7wvbeS2ckl7QphRh7j0wuTPomuzb14SX6Qj7dPa99adKn5bXkCN3vG91939wfAgh0vwAdfAXmfTdrWjpiYrxnPB9PbEvmfKNlHX3QrmA19Ut2X/u+Pts29S14MTO7WeDj+9ReJ7burtdb6OC72Z67Q6AnBOjge0I9lvvslbQ36Q2M3kN5X7cemrxppXpYC9YBAQS6S4AOvrukuR8EEECghMCSJOlzT9GPs5S4YYNc5H9t0quB/hpxqkoCdPBVgmQxCCCAQCUC+qKh005OWjarZBlZvq0+qdtbT3JuzfI21Nu608HXW4uwPgggEKWA/h3FP35FIVA1ATr4qlGyIAQQQKAigc/o1ltUtITs3/gBbQJfl1yldqSDrxIki0EAAQQqEWhaJXly0E+bo/2fk/Z5SfLhZW1/bJ2eHFCJI7f9hwAd/D8sGEMAAQR6TKD3usmcgSf1jvaLhhY/25bMu65tgd6Lp6ok0Fyl5bAYBBBAAAEEEKgjATr4OmoMVgUBBBBAAIFqCdDBV0uS5SCAAAIIIFBHAnTwddQYrAoCCCCAAALVEqCDr5Yky0EAAQQQQKCOBOjg66gxWBUEEEAAAQSqJRBzB+/vPM7d/gHVQmU5CCCAAAII9LRArP8Hv73gD1H8+wYvK+7o/TvZByoUAggggAACmRfIPYPN/MZ0YQM+0HU/VhYrNvBPmp+uUAgggAACCDSEQKwd/KtqvXOVRxW/iuFfyt5IoRBAAAEEEGgIgVg7eDfebsopyiLFZ/MeUggggAACCDSEQKzvwbvxPlJuUu7yBIUAAggggEAjCcTawV+lRlxL+ZxyorJEeV05VaEQQAABBBDIvECsHfw3Mt9ybAACCCCAAAIlBGJ+D34bufhf5P6ovJQOf63hKgqFAAIIIIBApgVi7uCXquUuUvZU/H/xTyi/Uw5WKAQQQAABBDItEHMHv4ZabhOlv7KZ4rcrPL5QoRBAAAEEEMi0QMwd/KNqOb9Ef52yj3KJYo/fKxQCCCCAAAKZFoi1g79YrfZ5xS/H91H8afqzFb9E72+3oxBAAAEEEMi0QKyfog//DndQTuvF+mQnh4BRBBBAAIFGEYi1U9tUDXipsl/akPtq+Nt0nAECCCCAAAKZF4j1DN6fnr9QOUHxJ+jd4X9boRBAAAEEEGgIgVg7eP+a3OOKP0Xvzv1whUIAAQQQQKBhBGJ9ib49bUH/L/xDDdOabAgCCCCAAAKpQKxn8CO0/Q8rqyr+LfgzlVcUv2RPIYAAAgggkHmBWDv4PTPfcmwAAggggAACJQRifYm+BAkXIYAAAgggkH2BmDv4zdV86+c04diccUYRQAABBBDItECsL9GPUaudrPh34N9X/KE7vwdPIYAAAggg0BACsXbw16v1HlT8tbRzGqIl2QgEEEAAAQRyBGLt4E0wXDkntRiq4RPKaek0AwQQQAABBDItEHMHP0ktF76Lvp/Gv5HplmTlEUAAAQQQyBGI+UN2q8vBvyLn/LOyu0IhgAACCCDQEAIxn8EPUwvun7aiP2x3RkO0KBuBAAIIIICABGI+g39V23+30ldpUWYpFAIIIIAAAg0hEHMHv5Za8HTldmWq8guFQgABBBBAoCEEYu7g/d77rcqzyu8U//AMhQACCCCAQEMIxPwe/ANqwfHKHor/Te4ehUIAAQQQQKAhBGLu4BepBb+qbKJMVzxNIYAAAggg0BACMXfw/dWCtyhNynzl14rP6ikEEEAAAQQyLxDze/B7qfV+o+ynHKYcqlAIIIAAAgg0hECsZ/BbqfU+VI5X/F30aytzFQoBBBBAoA4F2lqS5tbZ7cmief5tsNpU+0e1WW5PLTXWDn5ngQ9UnlN2TfHfSYcMEEAAAQTqTKB9aXLN7K+3zG/uvexHwmqydm0Ll/ULv6/JwntgobF28Jel1v6Sm0OUrykvpPMYIIAAAgjUmUDrm8kdWqU7Wutsvep5dWLt4DdQo5ygbKusphytvKZQCCCAAAL1KTBIq+W3V2tdD9X6Drpr+bF28H4m6P9796/J/bvC++9CoBBAAIH6FVjvpiTZfvsk2aCGX0r2bq8kudav6N5Vvw7lr1msHbx/Pe7LinaYZAvlScXvu7QpFAJxCrQnTa1za/cBpjhR/7HV7f7FC6oCgf4S/IE+O7VZBcvo7Kb/qStc689nNUTF2sEvVOvdmGZDDccq/5IONaAQiE+gbX7y6swdl/q/S6gaCLTOSfwLlj6ZoBDoFoFYO/hc3Dc14ZfpKQSiFmh9K9lboRBAoEEE6OAbpCHZDASqIOBvdxxQheWwiOICM4tfxCUIVFeADr66niwNgQwLDJqcJFv7q5upmgjM65Mkk47Uoh+tyeJZKAJ5AnTweSBMIhCvwBB17hM3iHf7a73l1+sOJm2kP4U7+PakuWVmvB9ybF8smbZlvw1S64aIZvl08NE0NRuKAAL1LNC2IJk0a8+l0b6E374wWbWtOXmwntsoa+tGB5+1FmN9EUCgIQVaZyaHKRQCVROgg68aJQtaTqA16dUyrT1pfSvelx2XM+nBGfo3OKq+BQZr9ZyYa4Y23v/GTFVBgA6+CogsorBA6+LkP2cf3TIj6ZXwFR+Fibp1bvv8ZI2kddkXOnXr/XJn5QoM+kuS7Bbxs+FFzUny4h+SZNo3yhXjeqUF6OBL+3BpBQJtU5NL9dWAl1awCG6KQEQCa+p3VO6I+EOOz6qtj1w9ogav+abSwdecOOo7WFNbv3HUAvW38XyTWv21CWuEQE0E6OBrwspCOwSG358ko0YkySCdmVA9L/Cefkhjgl7+bG2IH9LoeU/WAIH6FqCDr+/2yfjaDdSvPl2is/ihGd+ORln9G7QhE4Y0ytawHQggUFpAH2qgEEAAAQQQQKDRBOjgG61F2R4EEEAAAQQkwEv0FewG7Yvbey16Ot6fkG+bJzx9vWYFhNwUAQQQQKBGAnTwFcDq951ve2dMy1oVLCLTN21blKza2pr8NtMbwcojgAACDSpAB19Bw7ZMSb5bwc25KQIIIIAAAjUToIOvjHZT3XztyhaR+Vs/pS3gqyUz34xsAAIINJoAHXxFLTpYXxoyNuKvYZ2n/6u+7+okmX5WRYzcGAEEEECg6gKxd/D+gNjeir9xzfWq8qdlY2X92fzDJLko4q+WnCil+/uWRcWVEEAAAQS6VSD2Dv4UaQ9Tnk7Vl3SrPneGAAIIIIBAjQRi7+A/kuttin+ikEIAAQQQQKBhBGLt4FdTC96krKR8X3lO8T+066cKk8sVCgEEEEAAgUwLxNrBz1erHZS2nD8F/5biT8S/ks5jgAACCCCAQKYFYv8Wsi+p9camLejxY9NxBggggAACCGRaIPYOfju13vi0BS/VcItMtyYrjwACCCCAQCoQ60v0YQfw+/C3KC8q/srZ8xUKAQQQQACBzAvE3sG/oBbcQ1lXmZL51mQDEEAAAQQQSAVi7+CPkMPhSpMyQvmVcq1CIYAAAgggkGmB2Dt4v0TvuNzBj/IIhQACCCCAQNYFYu/gh6sB/W9yPoNfT9lR4edPhUAhgAACCGRbIPYOfmM1325pE/p/48/NdnOy9ggggAACCHQIxPpvcv20+e7MRyk+e3f6Kz6DpxBAAAEEEMi8QKxn8O7Qt1UGKL9TnlFcszsG/EUAAQQQQCDbArGewS9Usx2oHKwsUo5R9lLc8VMIIIAAAghkXiDWM/jQcO9r5L+UXoq/qnam8oZCIYAAAgggkGmBWDt4b/fXldHKe4pfpt9faVUoBBBAAAEEMi8Q60v0/rlYf8husLKh8j3lXuU7CoUAAggggEDmBWI9g5+rlvP/v1MIIIAAAgg0pECsZ/AN2ZhsFAIIIIAAAkGADr5Dwi/ZUwgggAACCDSMQKwv0YcGHKaRy9IJf23tCcrz6TQDBBBAAAEEMisQ+xn8GLWcP2B3iOJP0R+vUAgggAACCGReIPYOfpZa0F9w46+pHa28olAIIIAAAghkXiD2Dn6CWtCfqL9SWUsZr1AIIIAAAghkXiD2Dr5FLThH8Zm8v7LWX2FLIYAAAgggkHmB2Dv4PdWCeyjXK2so4xQKAQQQQACBzAvE3sHvoBb0p+j9yfnLlREKhQACCCCAQOYFYv83uVvVgpcoM5RPKecrFAIIIIAAApkXiLWD96/H+UN1/tT8YcrGin9Frk2hEEAAAQQQyLxArC/RD1DLfT+n9V7TOJ17DgijCCCAAALZFoj1DN6tNlI5MK/5pmn6ubx5TCKAAAIIIJA5gZg7+NXVWn5pPrf4N7lcDcYRQAABBDIrEHMH7zP1izPbcqw4AggggAACJQRi7eDny+SKEi5lXvTi4CT5+cdlXrkBr/aI9p+lfYpv2HsDk+QX+gKhNfl8Q3Gkbrzktr66s8XF73DWmnHvz8VlqnPJhE78Zw6J2/95ffh5wcrFrT/Sr37+UvvvJq3Fr1PpJbe6jZZUupR6uX1TvaxIRtdjHa33oIyue7VW+2UtqNgDwl8etG617ojlVEWg1GdM/OuKDlU7AfxL276ui4udNPlnvTcsffOqXFqqjapyBywEAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBEoI/H9691Ev1FXDqQAAAABJRU5ErkJggg==" alt="plot of chunk unnamed-chunk-3"/> </p>
+
+<p>From the plot above, we may not see the clear relationship between age group and attitudes towards Space exploration program, but we can roughly find except age group(60-74), as age group grows, the number of people who think we spend too much on the space exploration is increasing. So they are maybe associated.</p>
+
+<h3>Inference:</h3>
+
+<p>I will set the hypothesis like below.<br/>
+<strong>Ho:</strong> Attitude towards Space exploration program and age are independent. Attitude do not vary by age.<br/>
+<strong>Ha:</strong> Attitude towards Space exploration program and age are dependent. Attitude do vary by age.</p>
+
+<p>Since these two variables(age group, natspac) are both categorical, and the goal is to find the association of these two variables. I decide to use <strong>chi-square test of independence</strong> if it meet the conditions. 
+Here are the conditions I want to check.  </p>
+
+<ul>
+<li><em>Independence</em>: Sampled observations must be independent
+
+<ul>
+<li>random sample<br/>
+<strong>Satisfied</strong> because GSS data was nearly simple random sampled. </li>
+<li>if sampling without replacement, n &lt; 10% of population<br/>
+<strong>Satisfied</strong> because the sample size of GSS study every year(about 1500) is definetly &lt; 10% of all American population.</li>
+<li>each case only contributes to one cell in the table<br/>
+<strong>Satisfied</strong> because each case can only contribute to one cell.</li>
+</ul></li>
+<li><em>Sample size</em>: Each particular scenario must have at lease 5 expected cases<br/>
+I will discuss this condition using contingency table below. The table below is the observed results of each scenario.</li>
+</ul>
+
+<pre><code class="r">addmargins(table(pro2012_group))
+</code></pre>
+
+<pre><code>##              age_group
+## natspac       18-29 30-44 45-59 60-74 75- Sum
+##   Too Little     39    61    50    47   6 203
+##   About Right    86   118    95    65  33 397
+##   Too Much       44    83    86    57  27 297
+##   Sum           169   262   231   169  66 897
+</code></pre>
+
+<p>I calculate the <strong>expected</strong> accounts of each scenario. As you can see in the table below, each scenario have more than 5 cases, so <em>Sample size</em> condition is also satisfied.  </p>
+
+<table><thead>
+<tr>
+<th align="left">expected</th>
+<th align="center">(18 - 29)</th>
+<th align="center">(30 - 44)</th>
+<th align="center">(45 - 59)</th>
+<th align="center">(60 - 74)</th>
+<th align="center">(75 - )</th>
+<th align="left">sum</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="left">Too Little</td>
+<td align="center">38</td>
+<td align="center">59</td>
+<td align="center">53</td>
+<td align="center">38</td>
+<td align="center">15</td>
+<td align="left">203</td>
+</tr>
+<tr>
+<td align="left">About Right</td>
+<td align="center">75</td>
+<td align="center">116</td>
+<td align="center">102</td>
+<td align="center">75</td>
+<td align="center">29</td>
+<td align="left">397</td>
+</tr>
+<tr>
+<td align="left">Too Much</td>
+<td align="center">56</td>
+<td align="center">87</td>
+<td align="center">76</td>
+<td align="center">56</td>
+<td align="center">22</td>
+<td align="left">297</td>
+</tr>
+<tr>
+<td align="left">sum</td>
+<td align="center">169</td>
+<td align="center">262</td>
+<td align="center">231</td>
+<td align="center">169</td>
+<td align="center">66</td>
+<td align="left">897</td>
+</tr>
+</tbody></table>
+
+<p>As all conditions are satisfied, I will do the chi-square test of independence by using <a href="http://bit.ly/dasi_inference">inference method provided</a> to test the hypothesis that age and natspac are associated at the 5% significance level.<br/>
+In the inference method, the visualization of the relationship of two variables will be created, X-squared, df and p-value will be calculated.<br/>
+I set &rdquo;<em>y = pro2012_group$natspac, x = pro2012_group$age_group</em>&ldquo; because response variable is natspac and explanatory variable is age.<br/>
+I set est &quot;proportion&rdquo; because essecially proportions is used in this kind of method.<br/>
+I set method &ldquo;theoretical&rdquo; because I use theoretical rather than simulation as all of the expected cases &gt; 5.<br/>
+I set type &ldquo;ht&rdquo; because I am doing a hypothesis test.</p>
+
+<pre><code class="r">source(&quot;http://bit.ly/dasi_inference&quot;)
+inference(y = pro2012_group$natspac, x = pro2012_group$age_group, est = &quot;proportion&quot;, 
+    method = &quot;theoretical&quot;, type = &quot;ht&quot;, alternative = &quot;greater&quot;)
+</code></pre>
+
+<pre><code>## Response variable: categorical, Explanatory variable: categorical
+## Chi-square test of independence
+## 
+## Summary statistics:
+##              x
+## y             18-29 30-44 45-59 60-74 75- Sum
+##   Too Little     39    61    50    47   6 203
+##   About Right    86   118    95    65  33 397
+##   Too Much       44    83    86    57  27 297
+##   Sum           169   262   231   169  66 897
+</code></pre>
+
+<pre><code>## H_0: Response and explanatory variable are independent.
+## H_A: Response and explanatory variable are dependent.
+## Check conditions: expected counts
+##              x
+## y             18-29  30-44  45-59 60-74   75-
+##   Too Little  38.25  59.29  52.28 38.25 14.94
+##   About Right 74.80 115.96 102.24 74.80 29.21
+##   Too Much    55.96  86.75  76.48 55.96 21.85
+## 
+##  Pearson&#39;s Chi-squared test
+## 
+## data:  y_table
+## X-squared = 16.65, df = 8, p-value = 0.034
+</code></pre>
+
+<p><img src="data:image/png;base64,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" alt="plot of chunk unnamed-chunk-5"/> </p>
+
+<p>As we can see the results of inference above, p value is 0.034. Although p is not a very significant small value, because p &lt; 0.05, I reject the null bypothesis in favor of the alternative, which means that these data provide convincing evidence that age group and attitude towards Space exploration program are associated.<br/>
+As a conclusion, the data tells us there is a relationship between age groups and natspac, but that&#39;s all it says. Also, since I did a chi-square testing, there are no other methods were applicable and hence there&#39;s nothing to compare.</p>
+
+<h3>Conclusion:</h3>
+
+<!-- Write a brief summary of your findings without repeating your statements from earlier. Include a discussion of what you have learned about your research question and the data you collected, and include ideas for possible future research. -->
+
+<p>What I want to investigate is the associate between age and people&#39;s attitude towards the money we are spending on the Space exploration program. After I doing this study by dividing age into different age groups and perfoming chi-squared test of independence of these two variables, I learnt that attitude about Space exploration program do vary by age group, that also means it do vary by age.<br/>
+But that was all the data tells. I still do not know the specific relationship between these two variables, like how attitude changes as age grows, and how other factors(like education, job) will affect. So for the possible future research, I would like to investigate more about the specific relationship and the influence of other factors.</p>
+
+<h3>References:</h3>
+
+<ul>
+<li>The GSS data set I use in this study can be found <a href="http://bit.ly/dasi_gss_data">here</a>.<br/></li>
+<li><a href="http://publicdata.norc.org:41000/gssbeta/faqs.html#10">GSS Offical Site</a><br/></li>
+<li><a href="https://d396qusza40orc.cloudfront.net/statistics%2Fproject%2Fgss1.html#natspac">codebook of GSS</a></li>
+</ul>
+
+<h3>Appendix:</h3>
+
+<pre><code>##           natspac age_group
+## 55090 About Right     30-44
+## 55093 About Right     45-59
+## 55094  Too Little     30-44
+## 55096 About Right     18-29
+## 55097 About Right     18-29
+## 55099    Too Much     30-44
+## 55101    Too Much     45-59
+## 55103 About Right     30-44
+## 55105    Too Much     45-59
+## 55108  Too Little       75-
+## 55111    Too Much     45-59
+## 55113 About Right     30-44
+## 55116    Too Much       75-
+## 55117  Too Little     30-44
+## 55118 About Right       75-
+## 55119 About Right     60-74
+## 55121    Too Much     30-44
+## 55122 About Right     30-44
+## 55128 About Right     18-29
+## 55130  Too Little     45-59
+## 55132    Too Much     30-44
+## 55136 About Right       75-
+## 55139 About Right     30-44
+## 55140  Too Little     45-59
+## 55142  Too Little     45-59
+## 55145    Too Much       75-
+## 55146    Too Much       75-
+## 55150    Too Much     30-44
+## 55152    Too Much     30-44
+## 55156  Too Little     45-59
+## 55157    Too Much     45-59
+## 55159 About Right       75-
+## 55162  Too Little     45-59
+## 55164 About Right     45-59
+## 55165  Too Little     30-44
+## 55166    Too Much     30-44
+## 55169  Too Little     30-44
+## 55170 About Right     30-44
+## 55171 About Right     45-59
+## 55173 About Right     30-44
+## 55174    Too Much     45-59
+## 55179    Too Much     30-44
+## 55180    Too Much     30-44
+## 55181 About Right     45-59
+## 55187    Too Much     18-29
+## 55191 About Right     18-29
+## 55192 About Right     18-29
+## 55193  Too Little     18-29
+## 55197    Too Much     30-44
+## 55199    Too Much     60-74
+</code></pre>
+
+</body>
+
+</html>
+

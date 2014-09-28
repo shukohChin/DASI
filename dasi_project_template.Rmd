@@ -11,7 +11,7 @@ load(url("http://bit.ly/dasi_gss_data"))
 
 ### Introduction:
 <!-- What is your research question? Why do you care? Why should others care? -->
-What I will investigate in this report is the associate between age and people's attitude towards the money we are spending on the Space exploration program.  
+In this report I will explore the association between age and people's attitude towards the money we are spending on the Space exploration program.  
 Reasons why I am interested in this question, and why others should care are discussed below. 
 * First, to a certain extent, I am a fan of manga about space, like "Space brothers". Besides, I believe that we should spend more budget on space exploration because the development of technology during space exploration will benefit human eventually. So I think others should care, too.    
 * Second, People's attitude towards the money spending on the Space exploration program, somewhat indicates if people are positive or negative about it. I am interested to find what factors will influence the attitude. Other factors may also affect, like education, satisfaction of current life. But from my personal experience, some people I know, including myself, become conservative as age grows. So maybe it will be interesting if I find the association between age and attitude.
@@ -21,7 +21,7 @@ Reasons why I am interested in this question, and why others should care are dis
 
 <!-- Data Collection, Cases, Variables, Study, Scope of inference-generalizability. -->
 
-The Data I use is General Social Survey collect data on demographic characteristics and attitudes of residents of the United States, called "GSS". According to [GSS Offical Site]( http://publicdata.norc.org:41000/gssbeta/faqs.html#10), the way of data collection was listed below.
+The Dataset I use is from General Social Survey(GSS). It is a sociological survey used to collect data on demographic characteristics and attitudes of residents of the United States. According to [GSS Offical Site]( http://publicdata.norc.org:41000/gssbeta/faqs.html#10), the way of data collection was listed below.
  1. Since 1975 the GSS has used full-probability sampling of households designed to give each household an equal probability of being included in the GSS. Only one adult per household is interviewed.
  2. Majority of GSS data is obtained in face-to-face interviews. Computer-assisted personal interviewing (CAPI) began in the 2002.
  3. From 1972 until 1993, the GSS was administered almost annually. The target sample size for the annual surveys was 1500; actual sample sizes ranged between 1372 (1990) and 1613 (1972). Additionally, there were oversamples of black respondents in 1982 (oversample of 354) and 1987 (oversample of 353). There were no GSSs in 1979, 1981, or 1992.
